@@ -1,0 +1,104 @@
+{
+	"sumberData": [
+		{
+			"id": "anjab",
+			"title": "Database ANJAB",
+			"description": "Analisis Jabatan Seluruh Posisi",
+			"icon": "FileText"
+		},
+		{
+			"id": "abk",
+			"title": "Database ABK",
+			"description": "Analisis Beban Kerja Terintegrasi",
+			"icon": "BarChart3"
+		},
+		{
+			"id": "regulasi",
+			"title": "Pusat Regulasi",
+			"description": "Kumpulan Peraturan Kepegawaian",
+			"icon": "BookOpen"
+		}
+	],
+	"resources": {
+		"anjab": [
+			{
+				"id": "anjab-01",
+				"title": "Analisis Jabatan - Pranata Komputer Ahli Pertama",
+				"category": "Jabatan Fungsional",
+				"fileUrl": "/path/to/dummy.pdf"
+			},
+			{
+				"id": "anjab-02",
+				"title": "Analisis Jabatan - Analis Kebijakan Ahli Muda",
+				"category": "Jabatan Fungsional",
+				"fileUrl": "/path/to/dummy.pdf"
+			},
+			{
+				"id": "anjab-03",
+				"title": "Analisis Jabatan - Kepala Bagian Umum",
+				"category": "Jabatan Struktural",
+				"fileUrl": "/path/to/dummy.pdf"
+			},
+			{
+				"id": "anjab-04",
+				"title": "Analisis Jabatan - Sekretaris Daerah",
+				"category": "Jabatan Struktural",
+				"fileUrl": "/path/to/dummy.pdf"
+			}
+		],
+		"abk": [
+			{
+				"id": "abk-01",
+				"title": "Analisis Beban Kerja - Direktorat Jenderal Pajak 2023",
+				"category": "Laporan Tahunan",
+				"fileUrl": "/path/to/dummy.pdf"
+			},
+			{
+				"id": "abk-02",
+				"title": "Analisis Beban Kerja - Sekretariat Jenderal Kemenkeu",
+				"category": "Laporan Tahunan",
+				"fileUrl": "/path/to/dummy.pdf"
+			}
+		],
+		"regulasi": [
+			{
+				"id": "reg-01",
+				"title": "PP No. 11 Tahun 2017 - Manajemen PNS",
+				"category": "Peraturan Pemerintah",
+				"fileUrl": "/path/to/dummy.pdf"
+			},
+			{
+				"id": "reg-02",
+				"title": "UU No. 5 Tahun 2014 - Aparatur Sipil Negara",
+				"category": "Undang-Undang",
+				"fileUrl": "/path/to/dummy.pdf"
+			}
+		]
+	},
+	"fiturUtama": [
+		{
+			"id": "fu1",
+			"title": "Penilaian Kinerja",
+			"description": "Lihat hasil evaluasi Anda",
+			"icon": "TrendingUp"
+		},
+		{
+			"id": "fu2",
+			"title": "Kompetensi",
+			"description": "Tracking kompetensi & sertifikasi",
+			"icon": "Award"
+		},
+		{
+			"id": "fu3",
+			"title": "Persyaratan",
+			"description": "Cek kelengkapan meritokrasi",
+			"icon": "CheckSquare"
+		},
+		{
+			"id": "fu4",
+			"title": "Rekomendasi",
+			"description": "Saran pengembangan karir",
+			"icon": "Lightbulb"
+		}
+	]
+}

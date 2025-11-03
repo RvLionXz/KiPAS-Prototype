@@ -1,75 +1,13 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Meritokrasi ASN</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="main-header">
-        <div class="header-content">
-            <div class="logo-brand">
-                <div class="logo-icon">M</div>
-                <span>Meritokrasi ASN</span>
-            </div>
-        </div>
-    </header>
-
-    <div class="content-wrapper">
-        <main class="container" id="dashboard-view">
-            <section class="welcome-section">
-                <h2>Selamat datang, ASN</h2>
-                <p>Kelola dan pantau perkembangan meritokrasi Anda</p>
-            </section>
-
-            <section class="search-section">
-                <form class="search-bar" id="chat-form-main">
-                    <input type="text" id="chat-input-main" placeholder="Tanyakan apa saja tentang meritokrasi...">
-                    <button type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path></svg>
-                    </button>
-                </form>
-            </section>
-
-            <section>
-                <h3 class="section-title">Data Saya</h3>
-                <div class="card-grid grid-3-cols">
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path><path d="M9 9l1 0"></path><path d="M9 13l6 0"></path><path d="M9 17l6 0"></path></svg></div><div class="card-content"><h4>Anjab</h4><p>Deskripsi Jabatan Saya</p></div></div>
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path></svg></div><div class="card-content"><h4>ABK</h4><p>Analisis Beban Kerja</p></div></div>
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path><path d="M3 6l0 13"></path><path d="M12 6l0 13"></path><path d="M21 6l0 13"></path></svg></div><div class="card-content"><h4>Regulasi</h4><p>Peraturan & Kebijakan</p></div></div>
-                </div>
-            </section>
-            <section>
-                <h3 class="section-title">Fitur Utama</h3>
-                <div class="card-grid grid-2-cols">
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 17l6 -6l4 4l8 -8"></path><path d="M14 7l7 0l0 7"></path></svg></div><div class="card-content"><h4>Penilaian Kinerja</h4><p>Lihat hasil evaluasi Anda</p></div></div>
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5"></path><path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5"></path><path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5"></path><path d="M17 7.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h-2a6 6 0 0 1 -6 -6v-3a1.5 1.5 0 0 1 3 0v3"></path></svg></div><div class="card-content"><h4>Kompetensi</h4><p>Tracking kompetensi & sertifikasi</p></div></div>
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg></div><div class="card-content"><h4>Persyaratan</h4><p>Cek kelengkapan meritokrasi</p></div></div>
-                    <div class="card"><div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 9h.01"></path><path d="M11 12h1v4h1"></path><path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path></svg></div><div class="card-content"><h4>Rekomendasi</h4><p>Saran pengembangan karir</p></div></div>
-                </div>
-            </section>
-        </main>
-
-        <main class="container hidden" id="chat-view">
-            <div class="chat-messages" id="chat-messages"></div>
-        </main>
-    </div>
-
-    <footer class="chat-footer hidden" id="chat-footer">
-        <div class="footer-container">
-            <form class="search-bar" id="chat-form-footer">
-                <input type="text" id="chat-input-footer" placeholder="Tanyakan apa saja...">
-                <button type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/></svg>
-                </button>
-            </form>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kipas</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
