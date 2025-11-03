@@ -1,10 +1,12 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import HomePage from "./pages/HomePage";
 import ChatPage from "./pages/ChatPage";
 import PersonalizationPage from "./pages/PersonalizationPage";
 import ResourceListPage from "./pages/ResourceListPage";
+import LoginPage from "./pages/LoginPage";
+import OtpPage from "./pages/OtpPage";
 
 const pageVariants = {
 	initial: { opacity: 0 },
@@ -39,8 +41,10 @@ function App() {
 		<div className="bg-[#F8FAFC] min-h-screen font-sans">
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.pathname}>
+					<Route path="/login" element={<LoginPage />} />
+					<Route path="/otp" element={<OtpPage />} />
 					<Route
-						path="/"
+						path="/home"
 						element={
 							<AnimatedPage>
 								<HomePage />
@@ -71,6 +75,7 @@ function App() {
 							</AnimatedPage>
 						}
 					/>
+					<Route path="/" element={<Navigate to="/login" />} />
 				</Routes>
 			</AnimatePresence>
 		</div>

@@ -62,7 +62,7 @@ const PersonalizationPage = () => {
 					</div>
 
 					<div className="flex items-center justify-between pt-4">
-						<Link to="/" className="text-sm text-gray-600 hover:underline">
+						<Link to="/home" className="text-sm text-gray-600 hover:underline">
 							Batal
 						</Link>
 						<button

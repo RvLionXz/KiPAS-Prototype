@@ -11,11 +11,11 @@ const ChatPage = () => {
 	return (
 		<div className="flex flex-col h-screen bg-white">
 			<header className="p-4 border-b flex items-center justify-between shrink-0 sticky top-0 bg-white/80 backdrop-blur-sm z-10">
-				<Link to="/">
-					<img src={logoKiPAS} alt="KIPAS Logo" className="h-8 w-auto" />
+				<Link to="/home">
+					<img src={logoKiPAS} alt="KIPAS Logo" className="h-20 w-auto" />
 				</Link>
 				<Link
-					to="/"
+					to="/home"
 					className="text-sm font-medium text-gray-600 hover:text-primary"
 				>
 					Tutup

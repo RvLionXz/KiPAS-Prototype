@@ -25,11 +25,11 @@ const InfoCard = ({ icon, title, description }) => {
 
 	return (
 		<motion.div
-			className="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-primary transition-all duration-300 cursor-pointer group"
+			className="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-primary transition-all duration-300 cursor-pointer group h-full"
 			whileHover={{ y: -5, scale: 1.02 }}
 			transition={{ type: "spring", stiffness: 300 }}
 		>
-			<div className="flex items-center space-x-4">
+			<div className="flex items-start space-x-4">
 				<div className="text-primary p-2 rounded-lg bg-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
 					<IconComponent size={24} />
 				</div>
